@@ -12,10 +12,16 @@ public class OpenGoogle {
 
         //============================================================================
 
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.google.com/");
+        //WebDriverManager.chromedriver().setup();
+        //WebDriver driver = new ChromeDriver();
+        //driver.get("https://www.google.com/");
 
+
+        //============================================================================
+
+        WebDriver driver = new ChromeDriver();  // All ready run 'WebDriverManager.chromedriver().setup();' code in this line since selenium 4 version
+        driver.get("https://www.google.com/");
+        driver.quit();
 
 
     }
