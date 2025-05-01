@@ -31,7 +31,7 @@ public class TextBoxExample {
 
         //02) Append country to this city
         WebElement appendText = driver.findElement(By.id("j_idt88:j_idt91"));
-        appendText.sendKeys("India");
+        appendText.sendKeys("India"); //Not a overridden, this is append -> chennaiIndia
 
         //03) Verify if text box is disabled
         boolean enabled = driver.findElement(By.name("j_idt88:j_idt93")).isEnabled();
